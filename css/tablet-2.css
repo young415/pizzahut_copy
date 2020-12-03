@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 770px) and (max-width: 1024px){
+    .bg_gray{width: 100%; background: url(../img/wh_new_bg.jpg) no-repeat fixed;}
+    .t_1_banner{display: block; width: 100%; padding: 15px 0 5px; padding: 0.9375rem 0 0.3125rem}
+    
+    .m_t_order_icon li p{font-size: 20px; font-size: 1.25rem;}
+    .m_t_order_icon li img{width: 100%;}
+    
+    .m_banner{display: none;}
+	
+	.membership img{width: 49.5%;}
+    
+    .footer_top_menu{display: flex; flex-flow: row nowrap; justify-content: space-between;}
+    .footer_top_menu li{width: auto;}
+    .only_tablet{display: block;}
+    
+    .footer_middle_menu{width: auto}
+    .footer_middle_menu li{width: 16.6%}
+    
+    .footer_bottom{position: relative;}
+    .foot_logo{}
+    .info_left{}
+    
+    .kbpi{position: absolute; top: 0; right: 110px; right: 6.875rem}
+    .info_right{position: absolute; top: 80px; top: 5rem; right: 0; text-align: center}
+}

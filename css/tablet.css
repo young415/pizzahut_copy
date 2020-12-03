@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) and (max-width: 770px){
+    .bg_gray{width: 100%; background: url(../img/wh_new_bg.jpg) no-repeat fixed;}
+    .t_1_banner{display: block; width: 100%; padding: 15px 0 5px; padding: 0.9375rem 0 0.3125rem}
+    
+    .order_area{width: 92%;}
+    .m_t_order_icon li p{font-size: 16px; font-size: 1rem;}
+    
+    .m_banner{display: none;}
+	
+    .calling_area > div img{width: 25px; height: 25px; width: 1.5625rem; height: 1.5625rem; padding-top: 18px; padding-top: 1.125rem; padding-left: 15px; padding-left: 0.9375rem;}
+    
+    .kbpi{float: left}
+    .info_right{padding-left: 70px; padding-left: 4.375rem;}
+}

@@ -1,0 +1,78 @@
+/*reset*/
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; color: #3f3f3f}
+ul, ol, li{list-style: none}
+a{text-decoration: none; color: #3f3f3f}
+img{border: 0}
+table{border-collapse: collapse;}
+.clear{clear: both;}
+
+/*mobile*/
+.wrap{max-width: 320px;}
+
+#header{width: 100%;}
+.head_inner{width: 100%;  position: relative;}
+
+.top_logo{text-align: center; height: 56px; height: 3.5rem; border: 1px solid; width: 100%}
+.top_logo a img{width: 57px; height: 60px; width: 3.5625rem; height: 3.75rem;  border: 1px solid;}
+
+.top_left{display: flex; flex-direction: row; width: 105px; width: 6.5625rem; height: 27px; height: 1.6875rem; justify-content: space-between; position: absolute; top: 15px; left: 15px; top: 0.9375rem; left: 0.9375rem;}
+.top_left_menu a img{width: 23px; height: 27px; width: 1.4375rem; height: 1.6875rem}
+.best_10{border: 2px solid #c8102e; width: 68px; height: 23px; width: 4.25rem; height: 1.4375rem; text-align: center; border-radius: 5px; font-size: 14px; font-size: 0.875rem; line-height: 23px; line-height: 1.4375rem; font-weight: bold; box-shadow: 2px 2px 5px #ccc;}
+.best_10 a{ color: #c8102e}
+
+.top_right{display: flex; flex-direction: row; justify-content: space-between; width: 110px; width: 6.875rem; height: 27px; height: 1.6875rem; position: absolute; right: 15px; top: 15px; right: 0.9375rem; top: 0.9375rem;}
+.top_login{}
+.top_login button{width: 65px; height: 27px; width: 4.0625rem; height: 1.6875rem; border-radius: 5px; border: 1px solid #bbb; font-size: 12px; font-size: 0.75rem; font-weight: 400}
+.shopping_icon{}
+.shopping_icon a{}
+.shopping_icon a img{width: 34px; height: 27px; width: 2.125rem; height: 1.6875rem}
+
+.main_menu{max-width: 100%; height: 45px; height: 2.8125rem; background: #c8102e; line-height: 2.8125rem}
+.menu_inner{width: 100%;}
+.m_main_menu{width: 100%;}
+.m_main_menu li{float: left; width: 33.333%; text-align: center;}
+.m_main_menu li a{color: white; font-weight: bold; font-size: 14px; font-size: 0.875rem}
+
+/*display: none*/
+.pc_top_left, .join_area{display: none}
+
+
+
+
+/*pc*/
+@media screen and (max-width: 1000px){
+	.wrap{max-width: 1000px}
+    .head_inner{width: 900px; width: 73.75rem; margin: 0 auto;}
+    .top_logo{height: 64px; height: 4rem;}
+    .top_logo a img{width: 78px; height: 81px; width: 4.875rem; height: 5.0625rem}
+    
+    .pc_top_left{display: block; display: flex; flex-direction: row; justify-content: space-between; position: absolute; top: 18px; top: 1.125rem; width: 220px; width: 13.75rem}
+    .pc_top_left li{}
+    .pc_top_left li a{font-size: 14px; font-size: 0.875rem; color: #333; font-weight: bold; line-height: 24px; line-height: 1.5rem;}
+    .Biz{border: 2px solid #c8102e; border-radius: 8px; border-radius: 0.5rem; text-align: center;  width: 96px; height: 28px; width: 6rem; height: 1.75rem; line-height: 24px; line-height: 1.5rem; box-sizing: border-box;}
+    .top_eng, .store_search{position: relative; top: 3px; top: 0.1875rem}
+    
+    .top_right{right: 0; top: 20px; top: 1.25rem; width: 250px; width: 15.625rem}
+    .join_area{display: block;}
+    .join{display: flex; flex-direction: row; width: 200px; justify-content: space-between; position: relative; top: 5px; top: 0.3125rem}
+    .join li{font-size: 12px; font-size: 0.75rem}
+    .join li a{font-size: 14px; font-size: 0.875rem; color: #333; font-weight: bold}
+    .shopping_icon a img{width: 33px; height: 25px; width: 2.0625rem; height: 1.5625rem}
+    
+    
+    /*display:none*/
+    .top_left, .top_login{display: none}
+}
+
+
+
+/*tablet-2*/
+
+/*@media screen and (min-width: 770px) and (max-width: 1024px){}*/
+
+/*tablet*/
+
+/*@media screen and (min-width: 500px) and (max-width: 770px){}*/
+

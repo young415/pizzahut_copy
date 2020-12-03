@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" name="viewport" content="initial-scale=1, width=device-width">
+	<title>Pizzahut</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/tablet.css">
+	<link rel="stylesheet" href="css/tablet-2.css">
+	<link rel="stylesheet" href="css/pc.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+        $(function(){
+			
+			$(".com_area, .sub_menu_bg, .sub_menu").mouseover(function(){
+				$(this).children(".sub_menu").show();
+				$(".sub_menu_bg").show();
+			});
+			$(".com_area, .sub_menu_bg").mouseleave(function(){
+				$(this).children(".sub_menu").hide();
+				$(".sub_menu_bg").hide();
+			});
+			
+//			$(".p_main_menu_left, .sub_menu").mouseleave(function(){
+//				$(".sub_menu").hide();
+//			})
+//            $(".pizza_area, .sub_menu_bg").mouseover(function(){
+//				$(".sub_menu_bg, .pizza").css({display: "block"});
+//			});
+//            $(".pizza_area, .sub_menu_bg").mouseleave(function(){
+//				$(".sub_menu_bg, .pizza").css({display: "none"});
+//			});  
+//            $(".new_area, .sub_menu_bg").mouseover(function(){
+//				$(".sub_menu_bg, .new").css({display: "block"});
+//			});
+//            $(".new_area, .sub_menu_bg").mouseleave(function(){
+//				$(".sub_menu_bg, .new").css({display: "none"});
+//			});  
+        })
+    </script>
+</head>
+<body>
+	<header id="header">
+      
+       <div class="head_inner">
+           
+            <h1 class="top_logo"><a href="#"><img src="img/wh_logo.png" alt=""></a></h1>
+            <ul class="top_left">
+                <li class="top_left_menu"><a href="#"><img src="img/m_btn_l.svg" alt=""></a></li>
+                <li class="best_10"><a href="#">BEST 10</a></li>
+            </ul><!--top_left-->
+            
+            <ul class="pc_top_left">
+                <li class="Biz"><a href="#">피자헛 Biz</a></li>
+                <li class="top_eng"><a href="#">English</a></li>
+                <li class="store_search"><a href="#">매장찾기</a></li>
+            </ul><!--pc_top_left-->
+            
+            <ul class="top_right">
+                <li class="top_login"><button>로그인</button></li>
+                <li class="join_area">
+                    <ul class="join">
+                        <li><a href="#">회원가입</a></li>
+                        <li>|</li>
+                        <li><a href="#">로그인</a></li>
+                        <li>|</li>
+                        <li><a href="#">주문조회</a></li>
+                    </ul>
+                </li>
+                <li class="shopping_icon"><a href="#"><img src="img/basket.png" alt=""></a></li>
+            </ul><!--top_right-->
+            
+        </div><!--head_inner-->
+        
+        <nav class="main_menu">
+           <div class="menu_inner">
+               
+                <ul class="m_main_menu">
+                    <li><a href="#">피자</a></li>
+                    <li><a href="#">신제품 세트</a></li>
+                    <li><a href="#">사이드</a></li>
+                </ul><!--m_main_menu-->
+                
+                <ul class="p_main_menu_left">
+                   
+                   <li class="black_menu_area"><a href="#"><img src="img/all_view.png" alt=""></a>
+                       
+                   </li><!--black_menu_area-->
+                   
+                    <li class="pizza_area com_area"><a href="#">피자</a>
+                        <ul class="pizza sub_menu">
+                            <li><a href="#">프리미엄피자</a></li>
+                            <li><a href="#">팬피자</a></li>
+                            <li><a href="#">메가더블세트</a></li>
+                            <li><a href="#">메가콤비세트</a></li>
+                            <li><a href="#">메가크런치</a></li>
+                        </ul><!--pizza-->
+                    </li><!--pizza_area-->
+                    
+                    <li class="new_area com_area"><a href="#">신제품 세트</a>
+                        <ul class="new sub_menu">
+                            <li><a href="#"><img src="img/hit_icon.png" alt="" class="hit_icon">치즈포켓세트</a></li>
+                        </ul><!--new-->
+                    </li><!--new_area-->
+                    
+                    <li class="side_area com_area"><a href="#">사이드 & 음료</a>
+                        <ul class="side sub_menu">
+                            <li><a href="#">음료/소스/피클</a></li>
+                            <li><a href="#"><img src="img/50percent_icon.png" alt="" class="discount_icon">할인사이드</a></li>
+                            <li><a href="#">사이드박스</a></li>
+                            <li><a href="#">사이드</a></li>
+                        </ul><!--side-->
+                    </li><!--side_area-->
+                    
+                    <li class="event_area com_area"><a href="#">이벤트 & 할인</a>
+                        <ul class="event sub_menu">
+                            <li><a href="#">이벤트</a></li>
+                            <li class="front_discount"><a href="#">할인상품권</a></li>
+                        </ul><!--side-->
+                    </li><!--side_area-->
+                    
+                </ul><!--p_main_menu_left-->
+                
+                <ul class="p_main_menu_right">
+                    <li><a href="#">★ BEST 10</a></li>
+                    <li><a href="#"><img src="img/order_button01.svg" alt="">주문하기</a></li>
+                    <li><a href="#"><img src="img/order_button02_red.svg" alt="">그대로주문</a></li>
+                    <li><a href="#"><img src="img/order_button03_red.svg" alt="">E쿠폰주문</a></li>
+                </ul>
+            </div><!--main_inner-->
+        </nav><!--main_menu-->
+        
+        <div class="sub_menu_bg"></div>
+        
+	</header><!--header-->
+	
+	<section id="contents">
+        
+	    <div class="bg_gray">
+	        
+	        <div class="banner">
+	            <img src="img/main_rbn_m_01.jpg" alt="" class="m_banner">
+	            <img src="img/main_rbn_o_01.jpg" alt="" class="t_1_banner">
+	            <div class="banner_num">
+	                <p>1 / 5</p>
+	            </div>
+	        </div><!--banner-->
+	        
+	        <ul class="t_banner_btn">
+	            
+	            <li class="pre_btn"><a href="#"><img src="img/slide_btn_l.png" alt=""></a></li>
+	            <li class="first_btn banner_btn"><a href="#">1</a></li>
+	            <li class="second_btn banner_btn"><a href="#">2</a></li>
+	            <li class="third_btn banner_btn"><a href="#">3</a></li>
+	            <li class="fourth_btn banner_btn"><a href="#">4</a></li>
+	            <li class="fifth_btn banner_btn"><a href="#">5</a></li>
+	            <li class="next_btn"><a href="#"><img src="img/slide_btn_r.png" alt=""></a></li>
+	            
+	        </ul><!--banner_btn-->
+	        
+	    </div><!--bg_gray-->
+	    
+	    <div class="order_area">
+	        
+	        <div class="m_t_order"><a href="#"><img src="img/m_order_button01.svg" alt="">주문하기</a></div>
+	        
+	        <ul class="m_t_order_icon">
+	            <li><img src="img/etc_button01.png" alt="">
+	                <p>E쿠폰주문</p>
+	            </li>
+	            <li><img src="img/etc_button02.png" alt="">
+	                <p>매장찾기</p>
+	            </li>
+	            <li><img src="img/etc_button03.png" alt="">
+	                <p>멤버십</p>
+	            </li>
+	            <li><img src="img/etc_button04.png" alt="">
+	                <p>이벤트</p>
+	            </li>
+	        </ul><!--m_t_order_icon-->
+	        
+	    </div><!--order_area-->
+	    
+	    <div class="con_ad">
+	    	
+	    	<img src="img/main_dbn_01.jpg" alt="">
+	    	<img src="img/main_dbn_04.jpg" alt="">
+	    	<img src="img/main_dbn_02.jpg" alt="">
+	    	<img src="img/main_dbn_03.jpg" alt="">
+	    	<img src="img/main_dbn_10.jpg" alt="">
+	    	<img src="img/main_dbn_05.jpg" alt="">
+	    	
+	    </div><!--con_ad-->
+	    
+	    <div class="con_ad_gray">
+	    	<div class="membership">
+	    		<img src="img/main_foot_01.jpg" alt="">
+	    		<img src="img/main_foot_02.jpg" alt="">
+	    	</div><!--membership-->
+	    </div><!--con_ad_gray-->
+	    
+	    <div class="calling_area">
+            
+	        <div class="calling_top">
+                
+	            <img src="img/call_button01.jpg" alt="">
+	            <p>주문전화</p>
+	            <span>1588-5588 (11:00~22:30)</span>
+	            <div class="calling_btn">
+	                <a href="#">전화하기</a>
+	            </div><!--calling_btn-->
+	            
+	        </div><!--calling_top-->
+	        <div class="calling_bottom">
+                
+	            <img src="img/call_button02.jpg" alt="">
+	            <p>고객만족센터</p>
+	            <span>080-500-5588 (11:00~22:30)</span>
+	            <div class="calling_btn">
+	                <a href="#">전화하기</a>
+	            </div><!--calling_btn-->
+	            
+	        </div><!--calling_bottom-->
+	    </div><!--calling_area-->
+	    
+	</section><!--contents-->
+	
+	<footer id="footer">
+        
+        <ul class="footer_top_menu">
+            
+            <li class="only_tablet"><a href="#">회사소개</a></li>
+            <li class="only_tablet"><a href="#">피자헛 소식</a></li>
+            <li class="only_tablet"><a href="#">피자헛 상품권</a></li>
+            <li class="only_tablet"><a href="#">가맹점모집</a></li>
+            <li class="only_tablet"><a href="#">단체주문할인</a></li>
+            <li><a href="#">위치기반서비스</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li class="color_red"><a href="#">개인정보취급방침</a></li>
+            
+        </ul><!--footertop_menu-->
+        
+        <ul class="footer_middle_menu">
+            
+            <li class="only_tablet"><a href="#"><img src="img/button_promise.png" alt=""><br>피자헛의 약속</a></li>
+            <li class="only_tablet"><a href="#"><img src="img/button_store.png" alt=""><br>매장찾기</a></li>
+            <li class="only_tablet"><a href="#"><img src="img/button_answer.png" alt=""><br>자주묻는질문</a></li>
+            <li><a href="#"><img src="img/button_customer.png" alt=""><br>고객센터</a></li>
+            <li><a href="#"><img src="img/button_facebook_gray.png" alt=""><br>페이스북</a></li>
+            <li class="only_tablet"><a href="#"><img src="img/button_instagram_gray.png" alt=""><br>인스타그램</a></li>
+            
+        </ul><!--footer_middle_menu-->
+        
+        <div class="clear"></div>
+        
+        <div class="footer_eng">
+            <a href="#">English</a>
+        </div><!--footer_eng-->
+        
+        <div class="footer_bottom">
+            
+            <img src="img/foot_logo.png" alt="" class="foot_logo">
+            
+            <ul class="info_left">
+                <li>서울시 영등포구 국회대로 74길 4, 9~11층</li>
+                <li>사업자등록번호 120-81-63948 | 통신판매업신고번호 제2018-서울영등포-1220호</li>
+                <li>한국피자헛유한회사 대표이사 : 임승대</li>
+                <li>개인정보 보호책임자 : 김기철</li>
+                <li><p>Copyright © BY PIZZA HUT KOREA LTD. ALL RIGHT RESERVED</p></li>
+            </ul><!--info_left-->
+            
+            <img src="img/2019_kbpi.png" alt="" class="kbpi">
+            
+            <ul class="info_right">
+                
+                <li>한국능률협회컨설팅 선정</li>
+                <li>20년 연속(2001~2020)</li>
+                <li>한국 산업의 브랜드파워 피자전문점 부문 1위 피자헛</li>
+                
+            </ul><!--info_right-->
+            
+        </div><!--footer_bottom-->
+	    
+	</footer><!--footer-->
+	
+</body>
+</html>
